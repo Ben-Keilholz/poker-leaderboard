@@ -37,11 +37,11 @@ function App() {
               <div className="w-full">
                 <div className="flex justify-between mb-1">
                   <span className="text-sm font-medium text-gray-600">Buy-Ins:</span>
-                  <span>${Number(player.totalBuyIns).toLocaleString()}</span>
+                  <span>{Number(player.totalBuyIns).toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between mb-1">
                   <span className="text-sm font-medium text-gray-600">Winnings:</span>
-                  <span>${Number(player.totalWinnings).toLocaleString()}</span>
+                  <span>{Number(player.totalWinnings).toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between mt-2 text-lg font-semibold">
                   <span>Net:</span>
