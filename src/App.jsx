@@ -65,19 +65,21 @@ function App() {
   return (
     <div
       key={player.name}
-      className="bg-white border-2 border-black rounded-xl shadow-md p-6 flex flex-col items-center text-center"
+      className="bg-white border-2 border-black rounded-xl shadow-md p-6 flex flex-col text-center relative"
     >
-      {/* Top row: medal/rank + image + name */}
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-8">{rankDisplay}</div>
-        <img
-          src={player.imageUrl}
-          alt={player.name}
-          style={{ width: "50px", height: "50px" }}
-          className="rounded-full object-cover border"
-        />
-        <h2 className="text-xl font-bold ml-2">{player.name}</h2>
-      </div>
+      {/* Rank badge on left side, vertically aligned with image */}
+      <div className="absolute left-4 top-6">{rankDisplay}</div>
+
+      {/* Centered player image */}
+      <img
+        src={player.imageUrl}
+        alt={player.name}
+        style={{ width: "50px", height: "50px" }}
+        className="rounded-full object-cover border mx-auto mb-2"
+      />
+
+      {/* Player name below image */}
+      <h2 className="text-xl font-bold mb-4">{player.name}</h2>
 
       {/* Stats */}
       <div className="w-full">
