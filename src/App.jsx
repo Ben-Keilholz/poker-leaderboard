@@ -6,7 +6,14 @@ function App() {
   useEffect(() => {
     fetch("https://opensheet.elk.sh/16Qpc9Uv54GUV5tZYU9Z6bSzqKFCqKHFUrkC8WAnImUU/Sheet1")
       .then((res) => res.json())
-      .then((data) => setPlayers(data))
+      .then((data) => {
+        const sorted = data.sort((a, b) => {
+        const netA = Number(a.totalWinnings) - Number(a.totalBuyIns);
+        const netB = Number(b.totalWinnings) - Number(b.totalBuyIns);
+        return netB - netA; // Descending order
+      });
+  setPlayers(sorted);
+})
       .catch((err) => console.error("Failed to load sheet data:", err));
   }, []);
 
