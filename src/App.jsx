@@ -13,12 +13,12 @@ function App() {
           return (
             <div
               key={player.name}
-              className="bg-white border-4 border-blue-500 rounded-xl shadow p-6 flex flex-col items-center text-center"
+              className="bg-white rounded-xl shadow-md border-2 border-black p-6 flex flex-col gap-4 items-center text-center"
             >
               <img
                 src={player.imageUrl}
                 alt={player.name}
-                style={{ width: "500px", height: "50px" }}
+                style={{ width: "50px", height: "50px" }}
                 className="rounded-full object-cover border mb-4"
               />
               <h2 className="text-xl font-bold mb-2">{player.name}</h2>
