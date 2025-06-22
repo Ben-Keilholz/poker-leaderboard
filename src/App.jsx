@@ -46,7 +46,7 @@ function App() {
                 <div className="flex justify-between mt-2 text-lg font-semibold">
                   <span>Net:</span>
                   <span className={netColor}>
-                    ${net.toLocaleString()}
+                    {net.toLocaleString()}
                   </span>
                 </div>
               </div>
