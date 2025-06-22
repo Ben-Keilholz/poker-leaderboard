@@ -37,7 +37,7 @@ function App() {
       <img
         src="/images/first-place-medal.png"
         alt="Gold Medal"
-        className="w-8 h-8"
+        className="w-10 h-10"
       />
     );
   } else if (index === 1) {
@@ -45,7 +45,7 @@ function App() {
       <img
         src="/images/second-place-medal.png"
         alt="Silver Medal"
-        className="w-8 h-8"
+        className="w-10 h-10"
       />
     );
   } else if (index === 2) {
@@ -53,12 +53,12 @@ function App() {
       <img
         src="/images/third-place-medal.png"
         alt="Bronze Medal"
-        className="w-8 h-8"
+        className="w-10 h-10"
       />
     );
   } else {
     rankDisplay = (
-      <div className="text-sm font-semibold text-gray-700">#{index + 1}</div>
+      <div className="text-base font-semibold text-gray-700">#{index + 1}</div>
     );
   }
 
