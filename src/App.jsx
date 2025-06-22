@@ -43,7 +43,7 @@ function App() {
   } else if (index === 1) {
     rankDisplay = (
       <img
-        src="/images/second-place-medal.png"
+        src="/images/second-place-medal.jpg"
         alt="Silver Medal"
         className="w-10 h-10"
       />
