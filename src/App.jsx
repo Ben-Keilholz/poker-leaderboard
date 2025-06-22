@@ -36,7 +36,7 @@ function App() {
     rankDisplay = (
       <img
         src="/images/first-place-medal.png"
-        alt="First Place Medal"
+        alt="Gold Medal"
         className="w-8 h-8"
       />
     );
@@ -44,7 +44,7 @@ function App() {
     rankDisplay = (
       <img
         src="/images/second-place-medal.png"
-        alt="Second Place Medal"
+        alt="Silver Medal"
         className="w-8 h-8"
       />
     );
@@ -52,7 +52,7 @@ function App() {
     rankDisplay = (
       <img
         src="/images/third-place-medal.png"
-        alt="Third Place Medal"
+        alt="Bronze Medal"
         className="w-8 h-8"
       />
     );
@@ -65,40 +65,39 @@ function App() {
   return (
     <div
       key={player.name}
-      className="bg-white border-2 border-black rounded-xl shadow-md p-6 flex flex-row items-center gap-4"
+      className="bg-white border-2 border-black rounded-xl shadow-md p-6 flex flex-col items-center text-center"
     >
-      {/* Rank / Medal on the left */}
-      <div className="w-10 text-center">{rankDisplay}</div>
-
-      {/* Player image + stats */}
-      <div className="flex flex-col items-center text-center">
+      {/* Top row: medal/rank + image + name */}
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-8">{rankDisplay}</div>
         <img
           src={player.imageUrl}
           alt={player.name}
           style={{ width: "50px", height: "50px" }}
-          className="rounded-full object-cover border mb-2"
+          className="rounded-full object-cover border"
         />
-        <h2 className="text-xl font-bold mb-2">{player.name}</h2>
-        <div className="w-full">
-          <div className="flex justify-between mb-1 text-sm">
-            <span className="text-gray-600">Buy-Ins:</span>
-            <span>{Number(player.totalBuyIns).toLocaleString()}</span>
-          </div>
-          <div className="flex justify-between mb-1 text-sm">
-            <span className="text-gray-600">Winnings:</span>
-            <span>{Number(player.totalWinnings).toLocaleString()}</span>
-          </div>
-          <div className="flex justify-between mt-2 text-lg font-semibold">
-            <span>Net:</span>
-            <span className={netColor}>
-              {net.toLocaleString()}
-            </span>
-          </div>
+        <h2 className="text-xl font-bold ml-2">{player.name}</h2>
+      </div>
+
+      {/* Stats */}
+      <div className="w-full">
+        <div className="flex justify-between mb-1 text-sm">
+          <span className="text-gray-600">Buy-Ins:</span>
+          <span>{Number(player.totalBuyIns).toLocaleString()}</span>
+        </div>
+        <div className="flex justify-between mb-1 text-sm">
+          <span className="text-gray-600">Winnings:</span>
+          <span>{Number(player.totalWinnings).toLocaleString()}</span>
+        </div>
+        <div className="flex justify-between mt-2 text-lg font-semibold">
+          <span>Net:</span>
+          <span className={netColor}>{net.toLocaleString()}</span>
         </div>
       </div>
     </div>
   );
 })}
+
       </div>
     </div>
   );
