@@ -35,7 +35,7 @@ function App() {
                 <img src="/images/first-place-medal.png" alt="First Place Medal" className="w-8 h-8 mb-2" />
               )}
               {index === 1 && (
-                <img src="/images/second-place-medal.png" alt="Second Place Medal" className="w-8 h-8 mb-2" />
+                <img src="/images/second-place-medal.jpg" alt="Second Place Medal" className="w-8 h-8 mb-2" />
               )}
               {index === 2 && (
                 <img src="/images/third-place-medal.png" alt="Third Place Medal" className="w-8 h-8 mb-2" />
