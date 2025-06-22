@@ -24,13 +24,22 @@ function App() {
     >
       <h1 className="text-3xl font-bold text-center mb-8">DadBods Poker League StatSheet</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {players.map((player) => {
+        {players.map((player, index) => {
           const net =
             Number(player.totalWinnings) - Number(player.totalBuyIns);
           const netColor = net >= 0 ? "text-green-600" : "text-red-600";
 
           return (
             <div
+              {index === 0 && (
+                <img src="/images/first-place-medal.png" alt="First Place Medal" className="w-8 h-8 mb-2" />
+              )}
+              {index === 1 && (
+                <img src="/images/second-place-medal.png" alt="Second Place Medal" className="w-8 h-8 mb-2" />
+              )}
+              {index === 2 && (
+                <img src="/images/third-place-medal.png" alt="Third Place Medal" className="w-8 h-8 mb-2" />
+              )}
               key={player.name}
               className="bg-white border-2 border-black rounded-xl shadow-md p-6 flex flex-col items-center text-center"
             >
