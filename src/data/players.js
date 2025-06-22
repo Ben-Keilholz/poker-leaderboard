@@ -1,7 +1,7 @@
 const players = [
   {
     name: "Ben",
-    imageUrl: "https://via.placeholder.com/64?text=B",
+    imageUrl: "/public/images/BK-Logo.png",
     totalBuyIns: 150,
     totalWinnings: 200
   },
