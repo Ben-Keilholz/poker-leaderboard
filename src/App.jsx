@@ -15,7 +15,7 @@ function App() {
               <img
                 src={player.imageUrl}
                 alt={player.name}
-                className="w-16 h-16 rounded-full object-cover border"
+                className="w-5 h-5 rounded-full object-cover border"
               />
               <div>
                 <h2 className="text-xl font-semibold">{player.name}</h2>
