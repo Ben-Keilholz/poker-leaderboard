@@ -1,19 +1,19 @@
 const players = [
   {
     name: "Ben",
-    imageUrl: "/public/images/BK-Logo.png",
+    imageUrl: "/images/BK-Logo.png",
     totalBuyIns: 150,
     totalWinnings: 200
   },
   {
     name: "Alex",
-    imageUrl: "https://via.placeholder.com/64?text=A",
+    imageUrl: "/images/BK-Logo.png",
     totalBuyIns: 200,
     totalWinnings: 120
   },
   {
     name: "Jordan",
-    imageUrl: "https://via.placeholder.com/64?text=J",
+    imageUrl: "/images/BK-Logo.png",
     totalBuyIns: 180,
     totalWinnings: 180
   }
