@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-repeat p-6"
+      className="min-h-screen bg-repeat bg-top p-6"
       style={{ backgroundImage: "url('/images/dadbods-logo.jpg')" }}
     >
       <h1 className="text-3xl font-bold text-center mb-8">DadBods Poker League StatSheet</h1>
