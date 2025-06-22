@@ -22,8 +22,8 @@ function App() {
       className="min-h-screen bg-repeat bg-top p-6"
       style={{ backgroundImage: "url('/images/dadbods-logo.jpg')" }}
     >
-      <h1 className="text-3xl font-bold text-center mb-8 text-white drop-shadow">
-        DadBods Poker League StatSheet
+      <h1 className="text-3xl font-bold text-center mb-8 text-black drop-shadow">
+        DadBods Poker League Stat Sheet
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {players.map((player, index) => {
