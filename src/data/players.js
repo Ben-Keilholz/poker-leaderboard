@@ -2,7 +2,7 @@ const players = [
   {
     name: "Ben",
     imageUrl: "/images/BK-Logo.png",
-    totalBuyIns: 150,
+    totalBuyIns: 15000,
     totalWinnings: 200
   },
   {
