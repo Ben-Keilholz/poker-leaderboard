@@ -35,7 +35,7 @@ function App() {
           if (index === 0) {
             rankDisplay = (
               <img
-                src="/images/gold-medal.png"
+                src="/images/first-place-medal.png"
                 alt="Gold Medal"
                 className="w-8 h-8"
               />
@@ -43,7 +43,7 @@ function App() {
           } else if (index === 1) {
             rankDisplay = (
               <img
-                src="/images/silver-medal.png"
+                src="/images/second-place-medal.jpg"
                 alt="Silver Medal"
                 className="w-8 h-8"
               />
@@ -51,7 +51,7 @@ function App() {
           } else if (index === 2) {
             rankDisplay = (
               <img
-                src="/images/bronze-medal.png"
+                src="/images/third-place-medal.png"
                 alt="Bronze Medal"
                 className="w-8 h-8"
               />
