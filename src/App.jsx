@@ -13,7 +13,7 @@ function App() {
           return (
             <div
               key={player.name}
-              className="bg-white border border-gray-300 rounded-xl shadow-sm p-6 flex flex-col items-center text-center"
+              className="bg-white border-4 border-blue-500 rounded-xl shadow p-6 flex flex-col items-center text-center"
             >
               <img
                 src={player.imageUrl}
