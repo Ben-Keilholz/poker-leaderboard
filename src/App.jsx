@@ -13,7 +13,7 @@ function App() {
           return (
             <div
               key={player.name}
-              className="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center"
+              className="bg-white border border-gray-300 rounded-xl shadow-sm p-6 flex flex-col items-center text-center"
             >
               <img
                 src={player.imageUrl}
@@ -24,11 +24,11 @@ function App() {
               <h2 className="text-xl font-bold mb-2">{player.name}</h2>
               <div className="w-full">
                 <div className="flex justify-between mb-1">
-                  <span className="text-sm font-medium">Buy-Ins:</span>
+                  <span className="text-sm font-medium text-gray-600">Buy-Ins:</span>
                   <span>${player.totalBuyIns.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between mb-1">
-                  <span className="text-sm font-medium">Winnings:</span>
+                  <span className="text-sm font-medium text-gray-600">Winnings:</span>
                   <span>${player.totalWinnings.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between mt-2 text-lg font-semibold">
