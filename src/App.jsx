@@ -15,7 +15,7 @@ function App() {
               <img
                 src={player.imageUrl}
                 alt={player.name}
-                style={{ width: "100px", height: "100px" }}
+                style={{ width: "50px", height: "50px" }}
                 className="rounded-full object-cover border"
               />
               <div>
